@@ -1,0 +1,24 @@
+<form>
+    <div class="row">
+        <div class="col-md-4 PL-0">
+            <div class="form-control">
+                <input type="text" placeholder="What are you looking for..." />
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-control">
+                <ngx-autocomplete [searchKeyword]="'name'" 
+                    [inputId]="'searchEmployee'" 
+                    [placeholderValue]="'Address, neighborhood...'" 
+                    [entries]="employees" 
+                    (selectedValue)="selectEvent($event)">
+                </ngx-autocomplete>
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+        </div>
+        <div class="col-md-2 text-right PR-0">
+            <button class="btn btn-green" type="button">Search</button>
+        </div>
+    </div>
+</form>

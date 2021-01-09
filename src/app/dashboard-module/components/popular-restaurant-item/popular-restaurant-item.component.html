@@ -1,0 +1,36 @@
+<div [swiper]="popularRestaurantConfig" class="swiper-container popular-restaurant">
+    <div class="swiper-wrapper">
+        <div *ngFor="let i of [1,2,3,4,5,6,7,8]; let j = index;" class="popular-category__box swiper-slide">
+            <a>
+                <div class="food-category">PIZZA</div>
+
+                <div class="discount">-30%</div>
+
+                <img src="assets/images/restaurant-images/location_3.jpg" alt="">
+
+                <div class="popular-category__info">
+                    <h5>Bhinda's Curry Pizza</h5>
+                    <small>Bicknel, UT</small>
+                </div>
+            </a>
+
+            <div class="row popular-restaurant__footer">
+                <div class="col-md-5 PL-0">
+                    <strong>New Open</strong>
+                </div>
+                <div class="col-md-7 PR-0 text-right">
+                    <b>Superb</b>
+                    <i>350 Reviews</i>
+                    <div>9.5</div>
+                </div>    
+            </div>
+        </div>
+    </div>
+
+    <div class="next-prev-bg-white next-bg-white">
+        <div class="swiper-button-next"></div>
+    </div>
+    <div class="next-prev-bg-white prev-bg-white">
+        <div class="swiper-button-prev"></div>
+    </div>
+</div>

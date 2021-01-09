@@ -1,0 +1,23 @@
+<div [swiper]="popularCategoryConfig" class="swiper-container">
+    <div class="swiper-wrapper">
+        <div *ngFor="let i of [1,2,3,4,5,6,7,8]; let j = index;" class="popular-category__box swiper-slide">
+            <a>
+                <span>98</span>
+
+                <img src="assets/images/category-images/home_cat_hamburgher.jpg" alt="">
+
+                <div class="popular-category__info">
+                    <h5>Pizza</h5>
+                    <small>Avg price $40</small>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="next-prev-bg-white next-bg-white">
+        <div class="swiper-button-next"></div>
+    </div>
+    <div class="next-prev-bg-white prev-bg-white">
+        <div class="swiper-button-prev"></div>
+    </div>
+</div>
